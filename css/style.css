@@ -1,0 +1,590 @@
+/* General */
+:root {
+  --main-color: #343434;
+  --main-color-hover: #202020;
+  --main-color-light: #858994;
+  --accent-color: #dc2f2f;
+  --accent-color-hover: #ba2929;
+  --secondary-color: #1c819e;
+  --secondary-color-hover: #176980;
+}
+body {
+  font-family: 'Spinnaker', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jura', sans-serif;
+  font-weight: 600;
+}
+h1 {
+  margin-bottom: 4rem;
+}
+h2 {
+  margin-bottom: 4rem;
+}
+h3 {
+  font-size: 1rem; 
+}
+a {
+  color: var(--secondary-color);
+}
+.page-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.section-heading {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  
+}
+.dark-bg {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.dark-bg .section-heading {
+  color: #fff;
+}
+.blue-bg {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.blue-bg a {
+  color: #fff;
+}
+.btn {
+  letter-spacing: 1px;
+  font-family: 'Jura', sans-serif;
+}
+.btn-order {
+  background-color: var(--accent-color);
+  color: #fff;  
+}
+.btn-order:hover,
+.btn-order:focus {
+  background-color: var(--accent-color-hover);
+  color: #fff;
+}
+.page-footer {
+  background-color: var(--main-color-hover);
+  color: #fff;
+  font-size: 0.7rem;
+}
+.page-footer a {
+  color: #fff;
+}
+/* End General */
+
+/* Navbar */
+.navbar {
+   background-color: var(--main-color);
+}
+.main-section .navbar {
+  background-color: transparent;
+  font-family: 'Jura', sans-serif;
+}
+.navbar .navbar-brand img {
+  height: 40px;
+}
+.navbar .nav-item a {
+  border-bottom: 2px solid transparent;
+}
+.navbar .nav-item a:hover,
+.navbar .nav-item a:focus,
+.navbar .nav-item.active a.nav-link {
+  border-bottom-color: var(--secondary-color);
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+.navbar .search-btn {
+  background-color: var(--secondary-color, #D4A13A);
+  color: #fff;
+}
+.navbar .search-btn:hover,
+.navbar .search-btn:focus {
+  background-color: var(--secondary-color-hover);
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,1) !important;
+}
+.navbar-dark .navbar-text {
+  color: rgba(255,255,255,1) !important;
+}
+/* End Navbar */
+
+/* Media Navbar */
+@media (min-width: 992px) and (max-width: 1000px) {
+  .navbar .navbar-brand img {
+    height: 36px;
+  }
+}
+/* Medium and Small */
+@media (min-width: 576px) and (max-width: 991px) {
+  .navbar .navbar-collapse .form-inline {
+    float: left;
+  }
+  .navbar .navbar-collapse .navbar-text {
+    float: right;
+    text-align: right;
+  }
+  .navbar .navbar-collapse .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+  
+}
+/* Extra Small */
+@media (max-width: 575px) {
+  .navbar .form-control {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  .navbar .navbar-collapse .form-inline {
+    justify-content: center;
+  }
+  .navbar .navbar-collapse .nav-link {
+    display: inline-block;
+  }
+}
+/* End Media Navbar */
+
+.main-section {
+  height: 100vh;
+  background-image: url(https://i.postimg.cc/gJdv6dSp/black-and-white-industry-metal-41594.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+.main-section h1 {
+  margin-top: 100px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+.main-section .btn {
+  margin-bottom: 0.5rem;
+}
+.main-section .btn-order {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.main-section .btn-order:hover,
+.main-section .btn-order:focus {
+  background-color: var(--accent-color-hover);
+}
+.main-section .btn-search {
+ background-color: var(--main-color);
+  color: #fff;
+}
+.main-section .btn-search:hover,
+.main-section .btn-search:focus {
+  background-color: var(--main-color-hover);
+}
+.main-section .products {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.main-section .products .product {
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: top 10px center;
+  padding-top: 90px;
+  border-top: 3px solid transparent;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main-section .products .product:hover {
+  border-color: var(--secondary-color);
+  background-color: var(--main-color-hover);
+}
+.main-section .products .product:focus {
+  border-color: var(--accent-color);
+}
+.main-section .products .product-1 {
+  background-image: url(https://i.postimg.cc/SRBN44Dw/product1-white-bold.png);
+}
+.main-section .products .product-2 {
+  background-image: url(https://i.postimg.cc/fytT1yjc/product2-white-bold.png);
+}
+.main-section .products .product-3 {
+  background-image: url(https://i.postimg.cc/FHQsn9fS/product3-white-bold.png);
+}
+.main-section .products .product-4 {
+  background-image: url(https://i.postimg.cc/Jzc7f9J2/product4-white-bold.png);
+}
+.main-section .products .product-5 {
+  background-image: url(https://i.postimg.cc/02Syf6Nx/product5-white-bold.png);
+}
+.main-section .products .product-6 {
+  background-image: url(https://i.postimg.cc/ZY2qpP4V/product6-white-bold.png);
+}
+
+/* Media Main Section */
+/* Extra Small */
+@media (max-width: 575px) {
+  .main-section h1 {
+    font-size: 1.7rem;
+  }
+}
+/* End Media Main Section */
+
+/* Media Products */
+/* Large */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-section .products .product {
+    background-size: 50%;
+    padding-top: 100px;
+  }
+}
+/* Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-section .products .product {
+    background-size: 50%;
+    padding-top: 70px;
+  }
+}
+/* Extra Small */
+@media (max-width: 575px) {
+  .main-section .products .product {
+    background-size: 40%;
+    padding-top: 80px;
+  }
+  .main-section .products .product:nth-child(even) {
+    background-color: var(--main-color-hover);
+  }
+}
+/* Heigth */
+@media (max-height: 800px) and (max-width: 420px) {
+  .main-section h1 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+  .main-section .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+  .main-section .products .product {
+    padding-top: 60px;
+    font-size: 0.6rem;
+  }
+}
+/* End Media Products */
+
+/* About Us */
+.about-us .about-us-infographic {
+  color: #fff;
+}
+.about-us .about-us-infographic .about-us-infographic-block {
+  border: 5px solid #fff;
+  padding: 40px;
+  background-repeat: no-repeat;
+} 
+.about-us .about-us-infographic .about-us-infographic-block p {
+  margin: 0;
+}
+.about-us .about-us-infographic .about-us-age {
+  background-color: var(--main-color-light);
+  min-height: 170px;
+  background-image: url(https://i.postimg.cc/Dwh15zTX/calendar-opacity50.png);
+  background-position: top 40px right 40px;
+  background-size: 70px;
+}
+.about-us .about-us-infographic .about-us-age span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.about-us .about-us-infographic .about-us-guarantee {
+  background-color: var(--secondary-color-hover); 
+  min-height: 210px;
+  background-image: url(https://i.postimg.cc/MTnsxGXG/document-opacity50.png);
+  background-size: 80px;
+  background-position: top 40px left 40px;
+  padding-left: 140px
+}
+.about-us .about-us-infographic .about-us-guarantee span {
+  font-size: 1.5rem;
+}
+.about-us .about-us-infographic .about-us-general {
+  background-color: var(--secondary-color); 
+  min-height: 230px;
+  background-image: url(https://i.postimg.cc/SQ8X5pV7/worldwide-opacity50.png);
+  background-size: 100px;
+  background-position: top 40px left 40px;
+  padding-left: 160px;
+}
+.about-us .about-us-infographic .about-us-general span {
+  font-size: 1.5rem;
+}
+.about-us .about-us-infographic .about-us-office {
+  background-color: #c1c4c9; 
+  background-color: var(--main-color);
+  min-height: 160px;
+  background-image: url(https://i.postimg.cc/rspPD9hq/seat-opacity50.png);
+  background-size: 40px;
+  background-position: top 40px center;
+  padding-top: 90px;
+  text-align: center;
+}
+.about-us .about-us-infographic .about-us-office span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.about-us .about-us-infographic .about-us-goods {
+  background-color: var(--main-color-light);
+  min-height: 180px;
+  background-image: url(https://i.postimg.cc/tTnW5V8b/outsourcing-opacity50.png);
+  background-size: 90px;
+  background-position: top 40px left 40px;
+  padding-left: 160px;
+}
+.about-us .about-us-infographic .about-us-goods span {
+  font-size: 1.3rem;
+}
+/* End About Us */
+
+/* Media About Us */
+/* Large */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-us .about-us-infographic .about-us-infographic-block {
+    padding: 20px;
+  }
+  .about-us .about-us-infographic .about-us-age {
+    background-size: 60px;
+    min-height: 150px;
+    background-position: top 20px right 20px;
+  }
+  .about-us .about-us-infographic .about-us-guarantee {
+    background-size: 60px;
+    padding-left: 120px;
+    background-position: top 20px left 20px;
+  }
+  .about-us .about-us-infographic .about-us-general {
+    background-size: 80px;
+    padding-left: 140px;
+    min-height: 210px;
+    background-position: top 20px left 20px;
+  }
+  .about-us .about-us-infographic .about-us-office {
+    background-position: top 20px center;
+    background-size: 40px;
+    padding-top: 70px;
+  }
+  .about-us .about-us-infographic .about-us-goods {
+    background-position: top 20px left 20px;
+    background-size: 70px;
+    padding-left: 120px;
+    min-height: 160px;
+  }
+}
+/* Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-us .about-us-infographic .about-us-age {
+    padding-top: 80px;
+  }
+}
+/* Small */
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-us .about-us-infographic .about-us-infographic-block {
+    padding: 20px;
+  }
+  .about-us .about-us-infographic .about-us-age {
+    background-size: 60px;
+    min-height: 150px;
+    background-position: top 20px right 20px;
+    padding-top: 60px;
+  }
+  .about-us .about-us-infographic .about-us-guarantee {
+    background-size: 60px;
+    padding-left: 100px;
+    background-position: top 20px left 20px;
+  }
+  .about-us .about-us-infographic .about-us-general {
+    background-size: 80px;
+    padding-left: 120px;
+    min-height: 210px;
+    background-position: top 20px left 20px;
+  }
+  .about-us .about-us-infographic .about-us-office {
+    background-position: top 20px center;
+    background-size: 40px;
+    padding-top: 70px;
+  }
+  .about-us .about-us-infographic .about-us-goods {
+    background-position: top 20px left 20px;
+    background-size: 70px;
+    padding-left: 120px;
+    min-height: 160px;
+  }
+}
+/* Extra Small */
+@media (max-width: 575px) {
+  .about-us .about-us-infographic .about-us-infographic-block {
+    padding: 20px;
+  }
+  .about-us .about-us-infographic .about-us-age {
+    background-size: 60px;
+    min-height: 150px;
+    background-position: top 20px right 20px;
+    padding-top: 60px;
+  }
+  .about-us .about-us-infographic .about-us-guarantee {
+    background-size: 60px;
+    padding-left: 100px;
+    background-position: top 20px left 20px;
+  }
+  .about-us .about-us-infographic .about-us-general {
+    background-size: 80px;    
+    min-height: 210px;
+    background-position: top 20px left 20px;
+  }
+  .about-us .about-us-infographic .about-us-general p:first-child {
+    padding-left: 100px;
+    padding-top: 20px;
+  }
+  .about-us .about-us-infographic .about-us-general p:nth-child(2) {
+    
+  }
+  .about-us .about-us-infographic .about-us-office {
+    background-position: top 40px center;
+    background-size: 40px;
+    padding-top: 90px;
+  }
+  .about-us .about-us-infographic .about-us-goods {
+    background-position: top 20px left 20px;
+    background-size: 70px;
+    padding-left: 120px;
+    min-height: 160px;
+  }
+}
+/* End Media About Us */
+
+/* Benefits */
+.benefits-item {
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: top center;
+  padding-top: 100px;
+  margin-bottom: 70px;
+}
+.benefits-item-1 {
+  background-image: url(https://i.postimg.cc/jj5zD1XL/conveyor-opacity50.png);
+}
+.benefits-item-2 {
+  background-image: url(https://i.postimg.cc/9QX9kksJ/certificate-opacity50.png);
+}
+.benefits-item-3 {
+  background-image: url(https://i.postimg.cc/vTdgt2W7/airport-opacity50.png);
+}
+.benefits-item-4 {
+  background-image: url(https://i.postimg.cc/VvjMyPYH/discount-opacity50.png);
+}
+.benefits-item-5 {
+  background-image: url(https://i.postimg.cc/g0nZzZzh/delivery-opacity50.png);
+}
+/* End Benefits */
+
+/* Media Benefits */
+/* Small and Extra Small */
+@media(max-width: 767px) {
+  .benefits-row {
+    flex-direction: column;
+  }
+  .benefits-item {
+    min-height: 50px;
+    display: flex;
+    padding-top: 0;
+    padding-left: 90px;
+    margin-bottom: 30px;
+    background-position: left 20px center;
+    background-size: 40px;
+    text-align: left;
+    align-items: center;
+  }
+  .benefits-item p {
+    margin: 0;
+  }
+}
+/* Media Benefits */
+
+/* Contacts */
+.contacts .contacts-card {
+  border: 1px solid rgba(0,0,0,.125);
+}
+.contacts-card-left {
+  background-image: url(https://i.postimg.cc/rpYMTfg1/email-bg-blue-opacity70.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 40px;
+}
+.contacts-card-left .fas {
+  opacity: 0.5;
+  padding-right: 2rem;
+}
+.contacts-card-left li {
+  margin-bottom: 2rem;
+}
+.contacts-card-right {
+  background-color: #fff;
+  padding: 40px;
+}
+.contacts-card-right .contacts-form-heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+/* End Contacts */
+
+/* Product Card */
+.product-card-p-with-icon {
+  padding-left: 60px;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 40px;
+}
+.product-card-speed {
+  background-image: url(../img/meteor.png);
+}
+.product-card-order {
+  background-image: url(../img/email.png);
+}
+/* End Product Card */
+
+/* Manufactorer */
+.manufactorer-card .fas {
+color: var(--secondary-color);
+}
+.manufactorer-card .fa-ul li {
+margin-bottom: 1rem;
+} 
+.manufactorer-card .manufactorer-offer {
+  padding-left: 70px;
+  background-image: url(../img/email-white-opacity50.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+/* End Manufactorer */

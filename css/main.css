@@ -1,0 +1,490 @@
+/* General Styles */
+:root {
+  --primary: #005792;
+  --primary-dark: #13334c;
+  --accent: #fd5f00;
+  --light: #f6f6e9;
+  --light: #fafafa;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+    overflow-x: hidden;
+}
+a {
+  color: var(--primary);
+}
+a:hover {
+  color: var(--primary-dark);
+}
+h2 {
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 70px;
+position: relative;
+}
+h2:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 2000px;
+    right: 0;
+    bottom: -5px;
+    background-color: var(--accent);
+}
+h3 {
+  font-size: 0.9rem;
+/*   text-transform: uppercase; */
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.secondary-h1 {
+  color: var(--primary);
+  text-transform: uppercase;
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.secondary-h1:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 3000px;
+  left: 0;
+  bottom: -5px;
+  background-color: var(--accent);
+}
+/* End General Styles */
+
+/* Header */
+.header {
+	background-color: var(--light);
+}
+.header-top {
+	padding-top: 10px;
+}
+.header-top small {
+	color: #bdbdbe
+}
+.header-top .logo-in-header {
+	height: 40px;
+}
+.header-top .search-btn,
+#searchInHeader .search-btn {
+	color: #fff;
+	margin-left: 5px;
+	background-color: var(--accent);
+}
+.header-top .search-btn:hover,
+#searchInHeader .search-btn:hover {
+	background-color: var(--primary-dark);
+}
+#searchInHeader .form-inline .form-group {
+    display: flex;
+    flex-flow: row;
+}
+.header-top .fa-phone {
+	color: var(--primary)
+}
+.header-top .btn-recall {
+	border: 1px solid var(--primary);
+	color: var(--primary);
+	background-color: var(--light);
+}
+.header-top .btn-recall:hover {
+	background-color: var(--primary-dark);
+	border-color: var(--primary-dark);
+	color: #fff;
+}
+header .navbar {
+  background-color: var(--primary);
+  padding: 0;
+}
+header .navbar .fa-bars,
+header .navbar .fa-search {
+    color: #fff;
+}
+header .navbar .nav-link {
+  color: #fff;
+  transition: ease all 0.5s;
+  border-radius: 5px;
+  padding: 16px;
+}
+header .navbar .nav-link:hover {
+  background-color: var(--primary-dark);
+}
+header .navbar .phone {
+    color: #fff;
+    padding: 16px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+header .navbar .phone small {
+    color: rgba(255, 255, 255, 0.5);
+}
+/* End Header */
+
+/* Media Header */
+/* Large */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .logo-text-wrap {
+    line-height: 1;
+  }
+}
+/* Small */
+@media (min-width: 576px) and (max-width: 767px) {
+    .header-top .logo-in-header {
+        height: 30px;
+    }
+    .header-top .phone {
+        font-size: 0.8rem;
+    }
+}
+/* Extra Small */
+@media (max-width: 575px) {
+    header .navbar {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+/* End Media Header */
+
+/* Jumbotron */
+.jumbotron {
+	background-color: var(--light); 
+}
+.jumbotron .container {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom right -70px;
+/* 	min-height: 500px; */
+	color: #333;
+}
+.jumbotron h1 {
+  margin-bottom: 80px;
+}
+ .jumbotron h1 .lead {
+    padding-top: 20px;
+}
+.jumbotron button {
+	background-color: var(--accent);
+	color: #fff;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.jumbotron button:hover {
+	background-color: var(--primary-dark);
+}
+/* End Jumbotron */
+
+/* Products */
+.products-item {
+    display: block;
+    border: 2px solid var(--primary);
+    padding: 10px;
+    padding-top: 120px;
+    height: 100%;
+    word-wrap: break-word;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-color: var(--light);
+    position: relative; 
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+}
+.products-item:hover {
+	background-color: var(--accent);
+  border-color: var(--accent);
+	color: #fff;
+  text-decoration: none;
+}
+.products-item1 {
+  background-image: url(../img/product1-blue.png);
+}
+.products-item2 {
+  background-image: url(../img/product2-blue.png);
+}
+.products-item3 {
+  background-image: url(../img/product3-blue.png);
+}
+.products-item4 {
+  background-image: url(../img/product4-blue.png);
+}
+.products-item5 {
+  background-image: url(../img/product5-blue.png);
+}
+.products-item6 {
+  background-image: url(../img/product6-blue.png);
+}
+.products-item1:hover {
+	background-image: url(../img/product1-white.png);
+}
+.products-item2:hover {
+	background-image: url(../img/product2-white.png);
+}
+.products-item3:hover {
+	background-image: url(../img/product3-white.png);
+}
+.products-item4:hover {
+	background-image: url(../img/product4-white.png);
+}
+.products-item5:hover {
+	background-image: url(../img/product5-white.png);
+}
+.products-item6:hover {
+	background-image: url(../img/product6-white.png);
+}
+/* End Products */
+
+/* Media Products */
+/* Large */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .products-item {
+        padding-top: 100px;
+    }
+    .products-item p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+/* Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+    .products-item {
+        background-size: 60%;
+    }
+}
+/* Extra Small */
+@media (max-width: 575px) {
+    .products-item {
+        background-size: 50%;
+        padding-top: 100px;
+    }
+}
+/* End Media Products */
+
+/* About us */
+.about-us-numbers {
+  font-size: 10px;
+  color: gray;
+  text-transform: uppercase;
+}
+.about-us-numbers .left {
+  display: inline-block;
+  width: 40%;
+  color: var(--primary);
+  font-weight: 700;
+  text-align: right;
+}
+.about-us-numbers .left span {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.about-us-numbers .right {
+  display: inline;
+  padding-left: 15px;
+  
+}
+.about-us a {
+/*   text-transform: uppercase; */
+  font-weight: 600;
+} 
+/* End About us */
+
+/* Advantages */
+.advantages h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.advantages .advantages-item {
+  position: relative;
+}
+/* End Advantages */
+
+/* Media Advantages */
+/* Small and Extra Small */
+@media (max-width: 767px) {
+    .advantages .fa-angle-double-right {
+        transform: rotate(90deg);
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+/* End Media Advantages */
+
+/* Contacts */
+.contacts .fas {
+  color: var(--primary); 
+}
+.contacts li {
+  padding-bottom: 1rem;
+}
+.contacts h3 {
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.contacts .btn {
+  background-color: var(--accent);
+  color: #fff;
+  text-transform: uppercase;
+}
+.contacts .btn:hover {
+  background-color: var(--primary-dark);
+}
+/* End Contacts */
+
+/* Footer */
+footer {
+	background-color: #49484b;
+	color: #fff;
+	font-size: 0.7rem;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+footer .fas {
+  color: #fff; 
+}
+/* End Footer */
+
+/* Sidebar */
+.sidebar .list-group-item {
+  padding: 0;
+  background-color: var(--light);
+}
+.sidebar .list-group-item a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  padding-left: 4rem;
+  background-size: 30px;
+  background-position: left 10px center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #333;
+}
+.sidebar .list-group-item.active,
+.sidebar .list-group-item:hover {
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+}
+.sidebar .list-group-item.active a,
+.sidebar .list-group-item:hover a {
+  color: #fff;
+}
+.sidebar .automation {
+  background-image: url(../img/product1-orange.png); 
+}
+.sidebar .hydraulics {
+  background-image: url(../img/product2-orange.png); 
+}
+.sidebar .armature {
+  background-image: url(../img/product3-orange.png); 
+}
+.sidebar .drive {
+  background-image: url(../img/product4-orange.png); 
+}
+.sidebar .pump {
+  background-image: url(../img/product5-orange.png); 
+}
+.sidebar .spare {
+  background-image: url(../img/product6-orange.png); 
+}
+.sidebar .automation:hover,
+.sidebar .active .automation {
+  background-image: url(../img/product1-small-white.png); 
+}
+.sidebar .hydraulics:hover,
+.sidebar .active .hydraulics {
+  background-image: url(../img/product2-small-white.png); 
+}
+.sidebar .armature:hover,
+.sidebar .active .armature {
+  background-image: url(../img/product3-small-white.png); 
+}
+.sidebar .drive:hover,
+.sidebar .active .drive{
+  background-image: url(../img/product4-small-white.png); 
+}
+.sidebar .pump:hover,
+.sidebar .active .pump {
+  background-image: url(../img/product5-small-white.png); 
+}
+.sidebar .spare:hover,
+.sidebar .active .spare {
+  background-image: url(../img/product6-small-white.png); 
+}
+/* End Sidebar */
+
+/* Article */
+.article h2 {
+    text-transform: none;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.article h2:after {
+    width: 0;
+}
+/* End Article */
+
+/* Manufactorer */
+.manufactorer-card .fas {
+    color: var(--primary);
+}
+.manufactorer-card .fa-ul li {
+    margin-bottom: 1rem;
+} 
+.manufactorer-card a.card {
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+}
+.manufactorer-card a.card:hover {
+    border-color: var(--primary);
+}
+.manufactorer-card .manufactorer-offer {
+    padding: 20px 0 20px 20px;
+    background-color: #fff;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.125);
+    border-left: 3px solid var(--accent);
+}
+.manufactorer-card .manufactorer-offer .far,
+.manufactorer-card .manufactorer-offer .fas {
+  color: var(--accent);
+}
+.manufactorer-card a[aria-controls="aboutManufactorerCollapse"][aria-expanded="false"]:after {
+  content: "Читать больше";
+}
+.manufactorer-card a[aria-controls="aboutManufactorerCollapse"][aria-expanded="true"]:after {
+  content: "Свернуть";
+}
+/* End Manufactorer */
+
+/* Product Card */
+.product-card table {
+  font-size: 0.8rem;
+}
+.product-card table tr {
+  border-bottom: 1px dashed rgba(0,0,0,0.2);
+}
+.product-card table td:first-child {
+  color: #777;
+}
+.product-card .product-offer {
+    padding: 20px 0 20px 20px;
+    background-color: #fff;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.125);
+    border-left: 3px solid var(--accent);
+}
+.product-card .product-offer .far,
+.product-card .product-offer .fas {
+  color: var(--accent);
+}
+/* End Product Card */
+
+
+
