@@ -154,94 +154,171 @@ header .navbar .phone small {
 }
 /* End Media Header */
 
-/* Jumbotron */
-.jumbotron {
-	background-color: var(--light); 
+/* First Screen */
+.first-screen {
+  padding-top: 50px;
 }
-.jumbotron .container {
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: bottom right -70px;
-/* 	min-height: 500px; */
-	color: #333;
+.first-screen .product { 
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
-.jumbotron h1 {
-  margin-bottom: 80px;
-}
- .jumbotron h1 .lead {
-    padding-top: 20px;
-}
-.jumbotron button {
-	background-color: var(--accent);
-	color: #fff;
+.first-screen .product-text {
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+  padding-left: 15px;
   font-weight: 500;
-  margin-top: 50px;
 }
-.jumbotron button:hover {
-	background-color: var(--primary-dark);
+.first-screen .product-1 {
+/*  background-image: url(https://i.postimg.cc/26vhg5r2/robotcomputer.jpg);*/
+/*	background-image: url(../img/automation.jpg);*/
+/*	background-image: url(https://www.grobotics.eu/media/k2/items/cache/d61d44254608dd06ccdd2ff02982d14d_XL.jpg);*/
+	background-image: url(../img/automation1.jpg);
 }
-/* End Jumbotron */
+.first-screen .product-2 {
+/*  background-image: url(https://i.postimg.cc/FRqzqvSk/hydraulics.jpg);*/
+/*	background-image: url(../img/hydraulics.jpg);*/
+	background-image: url(../img/hudraulics1.jpeg);
+;}
+.first-screen .product-3 {
+/*  background-image: url(https://i.postimg.cc/xCqqt8XS/13d6f91a2c80aa3cb89e9446c8ffecb3.jpg);*/
+/*	background-image: url(../img/armature.jpg);*/
+	background-image: url(../img/armature1.jpg);
+}
+.first-screen .product-4 {
+/*  background-image: url(https://i.postimg.cc/G3HX6nVL/827719123f9e1a966cbcf1786433dcfb.jpg);*/
+/*	background-image: url(../img/drive.jpg);*/
+	background-image: url(../img/drive1.jpg);
+}
+.first-screen .product-5 {
+/*  background-image: url(https://i.postimg.cc/qgHRJGjk/tsentr.jpg);*/
+/*	background-image: url(../img/pump.jpg);*/
+	background-image: url(../img/pump1.jpg);
+}
+.first-screen .product-6 {
+/*  background-image: url(https://i.postimg.cc/rsrs2HGn/4.jpg);*/
+/*	background-image: url(../img/spare.jpg);*/
+	background-image: url(../img/spare1.jpg);
+}
+.first-screen .product-1,
+.first-screen .product-3,
+.first-screen .product-4,
+.first-screen .product-6 {
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 93%);
+	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 93%);
+}
+.first-screen .product-2,
+.first-screen .product-5 {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 93%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 93%, 0% 100%);
+}
+.first-screen .product-1 .product-text,
+.first-screen .product-3 .product-text,
+.first-screen .product-4 .product-text, 
+.first-screen .product-6 .product-text {
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+.first-screen .product-2 .product-text,
+.first-screen .product-5 .product-text {
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+clip-path: polygon(0 0, 100% 15%, 100% 85%, 0% 100%);
+}
+.first-screen .product-1 .product-text,
+.first-screen .product-3 .product-text,
+.first-screen .product-5 .product-text {
+	background-color: var(--primary-middle);
+	background-color: rgba(77,76,76,0.8);
+/*	background-color: var(--accent-dark);*/
+}
+.first-screen .product-2 .product-text,
+.first-screen .product-4 .product-text,
+.first-screen .product-6 .product-text {
+	background-color: var(--primary-light);
+	background-color: rgba(147,145,145,0.8);
+/*	background-color: var(--accent);*/
+}
+/* End First Screen */
 
-/* Products */
-.products-item {
-    display: block;
-    border: 2px solid var(--primary);
-    padding: 10px;
-    padding-top: 120px;
-    height: 100%;
-    word-wrap: break-word;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-color: var(--light);
-    position: relative; 
-    font-weight: 500;
-    color: #333;
-    font-size: 0.9rem;
+/* Media First Screen */
+/* Small */
+@media (min-width: 576px) and (max-width: 767px) {
+	
 }
-.products-item:hover {
-	background-color: var(--accent);
-  border-color: var(--accent);
-	color: #fff;
-  text-decoration: none;
+/* Extra Small */
+/*@media (max-width: 575px) {
+	.first-screen .product { 
+	  height: 200px;
+	}
+   .first-screen .product:nth-child(odd) {
+	  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+		clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+	}
+	.first-screen .product:nth-child(even) {
+	  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+		clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+	}
+	.first-screen .product .product-text {
+	  height: 70px;
+	  line-height: 70px;
+	  padding-left: 15px;
+	  font-weight: 500;
+		-webkit-clip-path: none;
+		clip-path: none;
+		text-align: center;
+	}
+	.first-screen .product-1 .product-text,
+	.first-screen .product-3 .product-text,
+	.first-screen .product-5 .product-text {
+	  background-color: var(--primary-middle);
+	}
+	.first-screen .product-2 .product-text,
+	.first-screen .product-4 .product-text,
+	.first-screen .product-6 .product-text {
+	  background-color: var(--primary-light);
+	}
+}*/
+@media (max-width: 575px) {
+	.first-screen {
+		padding-top: 0;
+	}
+	.first-screen .product { 
+		height: 31vh;
+		-webkit-clip-path: none;
+		clip-path: none;
+	}
+	.first-screen .product .product-text {
+	  height: 70px;
+	  line-height: 70px;
+	  padding-left: 15px;
+	  font-weight: 600;
+		-webkit-clip-path: none;
+		clip-path: none;
+		text-align: center;
+		font-size: 0.8rem;
+	}
+	.first-screen .product-1 .product-text,
+	.first-screen .product-4 .product-text,
+	.first-screen .product-5 .product-text {
+		background-color: var(--primary-middle);
+		background-color: rgba(77,76,76,0.8);
+	}
+	.first-screen .product-2 .product-text,
+	.first-screen .product-3 .product-text,
+	.first-screen .product-6 .product-text {
+		background-color: var(--primary-light);
+		background-color: rgba(147,145,145,0.8);
+	}
 }
-.products-item1 {
-  background-image: url(../img/product1-blue.png);
-}
-.products-item2 {
-  background-image: url(../img/product2-blue.png);
-}
-.products-item3 {
-  background-image: url(../img/product3-blue.png);
-}
-.products-item4 {
-  background-image: url(../img/product4-blue.png);
-}
-.products-item5 {
-  background-image: url(../img/product5-blue.png);
-}
-.products-item6 {
-  background-image: url(../img/product6-blue.png);
-}
-.products-item1:hover {
-	background-image: url(../img/product1-white.png);
-}
-.products-item2:hover {
-	background-image: url(../img/product2-white.png);
-}
-.products-item3:hover {
-	background-image: url(../img/product3-white.png);
-}
-.products-item4:hover {
-	background-image: url(../img/product4-white.png);
-}
-.products-item5:hover {
-	background-image: url(../img/product5-white.png);
-}
-.products-item6:hover {
-	background-image: url(../img/product6-white.png);
-}
-/* End Products */
+/* End Media First Screen */
 
 /* Media Products */
 /* Large */
