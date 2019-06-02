@@ -1,10 +1,12 @@
 /* General Styles */
 :root {
-  --primary: #005792;
-  --primary-dark: #13334c;
-  --accent: #fd5f00;
-  --light: #f6f6e9;
-  --light: #fafafa;
+  --primary: #002F87;
+  --primary-dark: #001a4b;
+  --primary-middle: #009AE0;
+  --primary-light: #01BAEF;
+  --accent: #20BF55;
+  --accent-dark: #1ba248;
+  --light: #FBFBFF;
 }
 body {
     font-family: 'Montserrat', sans-serif;
