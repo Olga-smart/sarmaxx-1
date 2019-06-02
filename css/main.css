@@ -377,22 +377,22 @@ footer .fas {
   color: #fff;
 }
 .sidebar .automation {
-  background-image: url(../img/product1-orange.png); 
+  background-image: url(../img/product1-icon-green.png); 
 }
 .sidebar .hydraulics {
-  background-image: url(../img/product2-orange.png); 
+  background-image: url(../img/product2-icon-green.png); 
 }
 .sidebar .armature {
-  background-image: url(../img/product3-orange.png); 
+  background-image: url(../img/product3-icon-green.png); 
 }
 .sidebar .drive {
-  background-image: url(../img/product4-orange.png); 
+  background-image: url(../img/product4-icon-green.png); 
 }
 .sidebar .pump {
-  background-image: url(../img/product5-orange.png); 
+  background-image: url(../img/product5-icon-green.png); 
 }
 .sidebar .spare {
-  background-image: url(../img/product6-orange.png); 
+  background-image: url(../img/product6-icon-green.png); 
 }
 .sidebar .automation:hover,
 .sidebar .active .automation {
